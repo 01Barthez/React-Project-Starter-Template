@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "rm -rf dist && vite build",
-    "start": "vite preview --port 3000",
+    "start": "vite preview",
     "lint": "eslint . --fix",
     "format": "prettier --write .",
     "clean": "rm -rf dist",
@@ -14,6 +14,7 @@
     "ci": "yarn lint && yarn test && yarn build"
   },
   "dependencies": {
+    "dotenv": "^16.4.7",
     "dotenv-safe": "^9.1.0",
     "env-var": "^7.5.0",
     "react": "^18.3.1",
