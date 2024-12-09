@@ -5,11 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "rm -rf dist && vite build",
+    "build": "rimraf dist && vite build",
     "start": "vite preview",
     "lint": "eslint . --fix",
     "format": "prettier --write .",
-    "clean": "rm -rf dist",
+    "clean": "rimraf dist",
     "test": "echo 'pas encore de test pour le moment' && exit 0",
     "ci": "yarn lint && yarn test && yarn build"
   },
